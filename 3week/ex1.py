@@ -16,7 +16,7 @@ print(sr_name, end='\n\n')
 sr_no = df.loc[2]
 print(sr_no, end='\n\n')
 
-cell_name = df.loc[2]['과목명']
+cell_name = df.loc[2]['강의실']
 print(cell_name)
 
 df.to_csv('file.csv', index=False)
