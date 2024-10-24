@@ -10,7 +10,7 @@ df2.rename(columns={"평균기온":'avg_temp'}, inplace=True)
 df2.rename(columns={"최고기온":'max_temp'}, inplace=True)
 df2.rename(3)
 
-ply.rc('font', family='Malgun Gothic')
+plt.rc('font', family='Malgun Gothic')
 plt.rcParams['axes.unicode_minus'] = False
 
 plt.title('서울시 2024년도 여름 기온 변화')
