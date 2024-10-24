@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv('2023_seoul_data.csv', encoding='utf-8')
+df = pd.read_csv('2024_seoul_data.csv', encoding='utf-8')
 df2 = df.fillna(method='ffill')
 df2.info()
 
