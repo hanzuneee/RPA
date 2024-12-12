@@ -67,7 +67,7 @@ async def make_excel_file():
         os.remove(save_file)
         
     makeXL(save_file)
-    return {"filename": save_file}    
+    return {"filename": filename}    
 
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
