@@ -57,7 +57,18 @@ def makeXL(filename) :
         
         print(filename)
         wb.save('filename')
-    
+        
+@app.post("/getexcelfile")
+async def make_excel_file():
+    filename = "sample.xlsl"
+    save_file = "static/files/" + filename
+    import os
+    if os.path.exists(save_file):
+        os.remove(save_file)
+        
+    makeXL(save_file)
+    return {"filename": save_file}    
+
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
